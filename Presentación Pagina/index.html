@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Price Nice – Compara precios, viaja con confianza</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <!-- logo-dark: para fondos oscuros -->
+        <img src="priceniceimages/logo-dark.png" alt="Price Nice Logo" class="logo-img" />
+        <span class="logo-text">Price<span class="accent">Nice</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#logos">Logos</a>
+        <a href="#contacto" class="btn-nav">Contacto</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge"><i class="fas fa-map-marker-alt"></i> Desde Bogotá para Colombia y el mundo</span>
+        <h1>Compara precios.<br /><span class="accent-text">Viaja con confianza.</span></h1>
+        <p class="hero-desc">
+          Price Nice es la plataforma que te protege del sobreprecio dondequiera que vayas.
+          Consulta, compara y encuentra los mejores precios antes de comprar — en tiendas
+          reales de Colombia.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary"><i class="fas fa-paper-plane"></i> Contáctanos</a>
+          <a href="#nosotros" class="btn-outline">Conoce más</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>31+</strong>
+            <span>Productos</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>6</strong>
+            <span>Categorías</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>0</strong>
+            <span>Sobreprecios</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-card">
+          <!-- logo-dark: hero tiene fondo oscuro -->
+          <img src="priceniceimages/logo-dark.png" alt="Price Nice" class="hero-logo-img" />
+          <div class="floating-tag tag1"><i class="fas fa-tag"></i> ¡Mejor precio!</div>
+          <div class="floating-tag tag2"><i class="fas fa-shield-alt"></i> Precio verificado</div>
+          <div class="floating-tag tag3"><i class="fas fa-globe-americas"></i> Colombia → Mundo</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f4fb"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEMÁTICA ========== -->
+  <section class="problema" id="problema">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">El Problema</span>
+        <h2>¿Por qué existe Price Nice?</h2>
+        <p>Cada día, miles de consumidores y turistas pagan de más sin saberlo.</p>
+      </div>
+      <div class="problema-grid">
+        <div class="problema-card">
+          <div class="problema-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <h3>Precios injustos</h3>
+          <p>Existen diferencias injustificadas de precios en algunas zonas, afectando a consumidores locales sin que lo sepan.</p>
+        </div>
+        <div class="problema-card highlight">
+          <div class="problema-icon"><i class="fas fa-passport"></i></div>
+          <h3>Impuesto al turista</h3>
+          <p>Los extranjeros son los más afectados: pagan más simplemente por no conocer los precios reales del mercado local.</p>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon"><i class="fas fa-search-dollar"></i></div>
+          <h3>Falta de información</h3>
+          <p>No existe una fuente clara y confiable que indique cuál es el precio razonable para un producto o servicio.</p>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon"><i class="fas fa-user-slash"></i></div>
+          <h3>Consumidores desprotegidos</h3>
+          <p>Sin herramientas de comparación, los usuarios quedan expuestos a la manipulación y el cobro excesivo.</p>
+        </div>
+      </div>
+      <div class="historia-box">
+        <div class="historia-icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="historia-text">
+          <h3>¿Cómo nació Price Nice?</h3>
+          <p>
+            La idea surgió de una experiencia real de una integrante del equipo en
+            <strong>Punta Cana</strong>: le cobraron precios elevados simplemente por ser
+            extranjera. Esa injusticia — el llamado <em>"impuesto al turista"</em> — la motivó
+            a crear una aplicación que permita comparar precios y reducir el riesgo de que
+            los consumidores sean engañados o cobren de más.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NOSOTROS ========== -->
+  <section class="nosotros dark-section" id="nosotros">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-badge">Nosotros</span>
+        <h2>¿Quiénes somos?</h2>
+        <p>Un equipo comprometido con la transparencia y la equidad en los precios.</p>
+      </div>
+
+      <div class="mv-grid">
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Misión</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Facilitar el conocimiento de los precios de diferentes productos y sectores.</li>
+            <li><i class="fas fa-check-circle"></i> Evitar la manipulación o sobreprecio de los productos.</li>
+            <li><i class="fas fa-check-circle"></i> Ayudar a los consumidores a encontrar precios accesibles.</li>
+            <li><i class="fas fa-check-circle"></i> Proteger la economía de los usuarios.</li>
+          </ul>
+        </div>
+        <div class="mv-card">
+          <div class="mv-icon"><i class="fas fa-telescope"></i></div>
+          <h3>Visión</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>5 años:</strong> Cobertura y accesibilidad en toda Colombia, atendiendo colombianos y extranjeros.</li>
+            <li><i class="fas fa-globe-americas"></i> <strong>10 años:</strong> Expansión por toda Latinoamérica.</li>
+            <li><i class="fas fa-globe"></i> <strong>Largo plazo:</strong> Reconocimiento a nivel global.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header light" style="margin-top:4rem;">
+        <h2>Valores Corporativos</h2>
+      </div>
+      <div class="valores-grid">
+        <div class="valor-card">
+          <i class="fas fa-tasks"></i>
+          <h4>Responsabilidad</h4>
+          <p>Cumplimos nuestras tareas de forma organizada y oportuna.</p>
+        </div>
+        <div class="valor-card">
+          <i class="fas fa-lightbulb"></i>
+          <h4>Innovación</h4>
+          <p>Creamos soluciones útiles y modernas para los viajeros y consumidores.</p>
+        </div>
+        <div class="valor-card">
+          <i class="fas fa-hands-helping"></i>
+          <h4>Trabajo en equipo</h4>
+          <p>Colaboramos y respetamos las ideas de todos los integrantes.</p>
+        </div>
+        <div class="valor-card">
+          <i class="fas fa-handshake"></i>
+          <h4>Honestidad</h4>
+          <p>Proporcionamos información confiable y verificada por la comunidad.</p>
+        </div>
+        <div class="valor-card">
+          <i class="fas fa-heart"></i>
+          <h4>Empatía</h4>
+          <p>Comprendemos las necesidades de turistas y consumidores en general.</p>
+        </div>
+        <div class="valor-card">
+          <i class="fas fa-star"></i>
+          <h4>Calidad</h4>
+          <p>Ofrecemos una aplicación útil, sencilla y eficiente para todos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICIOS / PRODUCTO ========== -->
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Producto</span>
+        <h2>¿Qué hace Price Nice?</h2>
+        <p>Una plataforma completa de comparación de precios con roles, verificación y catálogo en tiempo real.</p>
+      </div>
+
+      <!-- Producto principal -->
+      <div class="producto-hero">
+        <div class="producto-info">
+          <h3><i class="fas fa-mobile-alt"></i> Price Nice App</h3>
+          <p>
+            Aplicación móvil y plataforma web que permite comparar precios de diferentes
+            negocios en Colombia. Dirigida a viajeros y consumidores en general, usa
+            recomendaciones y reseñas de usuarios reales para ayudarte a tomar la mejor
+            decisión de compra y prevenir el cobro excesivo a turistas.
+          </p>
+          <div class="producto-tags">
+            <span><i class="fab fa-android"></i> Android</span>
+            <span><i class="fab fa-apple"></i> iOS</span>
+            <span><i class="fas fa-globe"></i> Web</span>
+            <span><i class="fas fa-fire"></i> Firebase</span>
+          </div>
+          <div class="monetizacion">
+            <h4><i class="fas fa-coins"></i> Modelo de negocio</h4>
+            <div class="mono-cards">
+              <div class="mono-card">
+                <i class="fas fa-ad"></i>
+                <strong>Gratuito</strong>
+                <span>Con publicidad y anuncios integrados</span>
+              </div>
+              <div class="mono-card premium">
+                <i class="fas fa-crown"></i>
+                <strong>Premium</strong>
+                <span>Sin anuncios, mayor velocidad y funciones adicionales</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="producto-objetivos">
+          <h3>Plan de expansión</h3>
+          <div class="obj-timeline">
+            <div class="obj-item">
+              <div class="obj-dot current"></div>
+              <div class="obj-content">
+                <strong>Fase 1 – Bogotá</strong>
+                <p>Recopilación de precios de negocios en la capital colombiana.</p>
+              </div>
+            </div>
+            <div class="obj-item">
+              <div class="obj-dot"></div>
+              <div class="obj-content">
+                <strong>Fase 2 – Colombia</strong>
+                <p>Expansión a otros departamentos: Medellín, Cali, Barranquilla y más.</p>
+              </div>
+            </div>
+            <div class="obj-item">
+              <div class="obj-dot"></div>
+              <div class="obj-content">
+                <strong>Fase 3 – Latinoamérica</strong>
+                <p>Expansión a otros países de la región latinoamericana.</p>
+              </div>
+            </div>
+            <div class="obj-item">
+              <div class="obj-dot"></div>
+              <div class="obj-content">
+                <strong>Fase 4 – Global</strong>
+                <p>Reconocimiento internacional y presencia en mercados del mundo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categorías reales -->
+      <div class="section-header" style="margin-top:4rem;">
+        <span class="section-badge">Catálogo</span>
+        <h2>Categorías disponibles</h2>
+        <p>Estos son los sectores que cubre Price Nice actualmente en su catálogo de productos.</p>
+      </div>
+      <div class="categorias-grid">
+        <div class="cat-card">
+          <div class="cat-emoji">💄</div>
+          <h4>Belleza</h4>
+          <span>Cremas, maquillaje, sérums y más</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-emoji">🧴</div>
+          <h4>Higiene</h4>
+          <span>Detergentes, jabones, pasta dental</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-emoji">🍎</div>
+          <h4>Alimentos</h4>
+          <span>Arroz, aceites, lácteos, café</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-emoji">🏠</div>
+          <h4>Hogar</h4>
+          <span>Almohadas, focos, organizadores</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-emoji">🍼</div>
+          <h4>Bebés</h4>
+          <span>Pañales, fórmulas, biberones</span>
+        </div>
+        <div class="cat-card">
+          <div class="cat-emoji">🐾</div>
+          <h4>Mascotas</h4>
+          <span>Croquetas, arena, accesorios</span>
+        </div>
+      </div>
+
+      <!-- Tabs: servicios de desarrollo -->
+      <div class="section-header" style="margin-top:4rem;">
+        <span class="section-badge">Desarrollo</span>
+        <h2>Servicios tecnológicos</h2>
+        <p>También ofrecemos soluciones digitales para empresas en la nube y móvil.</p>
+      </div>
+      <div class="servicios-tabs">
+        <button class="tab-btn active" data-tab="cloud">
+          <i class="fas fa-cloud"></i> Aplicaciones en la Nube
+        </button>
+        <button class="tab-btn" data-tab="mobile">
+          <i class="fas fa-mobile-alt"></i> Aplicaciones Móviles
+        </button>
+      </div>
+      <div class="tab-content active" id="tab-cloud">
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <i class="fas fa-cogs"></i>
+            <h4>Sistemas de Gestión</h4>
+            <p>Plataformas empresariales a medida para optimizar procesos de negocio.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-laptop-code"></i>
+            <h4>Plataformas Web</h4>
+            <p>Desarrollo de sitios web modernos, rápidos y completamente responsivos.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-database"></i>
+            <h4>Almacenamiento Cloud</h4>
+            <p>Soluciones de almacenamiento seguro y accesible desde cualquier lugar.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-cube"></i>
+            <h4>SaaS</h4>
+            <p>Software como Servicio listo para usar, sin instalación.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Respaldo y Seguridad</h4>
+            <p>Protección y recuperación de información empresarial crítica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-mobile">
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <i class="fab fa-android"></i>
+            <h4>Apps Android</h4>
+            <p>Aplicaciones nativas y multiplataforma optimizadas para Android.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fab fa-apple"></i>
+            <h4>Apps iOS</h4>
+            <p>Aplicaciones diseñadas y optimizadas para dispositivos Apple.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-building"></i>
+            <h4>Apps Empresariales</h4>
+            <p>Soluciones móviles para gestión y operación corporativa.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-shopping-cart"></i>
+            <h4>E-Commerce</h4>
+            <p>Aplicaciones de comercio electrónico completas y seguras.</p>
+          </div>
+          <div class="servicio-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Educativas y Entretenimiento</h4>
+            <p>Apps interactivas para aprender, jugar y explorar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECNOLOGÍAS ========== -->
+  <section class="tecnologias dark-section" id="tecnologias">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-badge">Stack</span>
+        <h2>Tecnologías que usamos</h2>
+        <p>Herramientas modernas para construir soluciones de alta calidad y escalabilidad.</p>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="tech-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="tech-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+        <div class="tech-card"><i class="fab fa-react"></i><span>React</span></div>
+        <div class="tech-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-img"/>
+          <span>MySQL</span>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tech-img"/>
+          <span>MongoDB</span>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" class="tech-img"/>
+          <span>Azure</span>
+        </div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="Ionic" class="tech-img"/>
+          <span>Ionic</span>
+        </div>
+        <div class="tech-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="tech-img"/>
+          <span>Flutter</span>
+        </div>
+        <!-- Tecnologías reales confirmadas del proyecto -->
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="tech-img"/>
+          <span>Firebase</span>
+        </div>
+        <div class="tech-card"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+        <div class="tech-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chartjs/chartjs-original.svg" alt="Chart.js" class="tech-img" onerror="this.src='';this.parentElement.innerHTML='<i class=\'fas fa-chart-bar\' style=\'color:var(--orange-light);font-size:2rem\'></i><span>Chart.js</span>'"/>
+          <span>Chart.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTAFOLIO ========== -->
+  <section class="portafolio" id="portafolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Portafolio</span>
+        <h2>Funcionalidades del proyecto</h2>
+        <p>Módulos reales desarrollados y en funcionamiento dentro de Price Nice.</p>
+      </div>
+      <div class="portafolio-grid">
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #775533, #b87d3a);">
+            <i class="fas fa-tags proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Catálogo de Precios</h3>
+            <p>Módulo de catálogo con más de 31 productos reales en 6 categorías. Filtros por categoría, tienda y estado de verificación. Incluye precios en COP de tiendas colombianas como D1, Éxito, Jumbo, Carulla y más.</p>
+            <div class="proyecto-tech">
+              <span>JavaScript</span><span>Firebase</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #D4954D, #f0b878);">
+            <i class="fas fa-check-double proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Verificación de Productos</h3>
+            <p>Sistema de verificación colaborativa donde usuarios certificados confirman el estado físico de los productos con foto de evidencia obligatoria. Aprueba o rechaza productos del catálogo.</p>
+            <div class="proyecto-tech">
+              <span>Firebase Firestore</span><span>Bootstrap</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #5a3d22, #775533);">
+            <i class="fas fa-dollar-sign proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Actualización de Precios en Vivo</h3>
+            <p>Módulo para actualizar precios en tiempo real. Requiere foto de evidencia, lugar y tienda donde se encontró el precio. Muestra historial de actualizaciones recientes con diferencia de precio.</p>
+            <div class="proyecto-tech">
+              <span>Firebase Firestore</span><span>Bootstrap</span><span>Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #1565c0, #0d47a1);">
+            <i class="fas fa-users-cog proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Sistema de Roles y Accesos</h3>
+            <p>Gestión de usuarios por roles: Admin, Dueño, Vendedor, Verificador, Patrocinador y Usuario estándar. Cada rol tiene acceso a paneles y funciones específicas dentro de la plataforma.</p>
+            <div class="proyecto-tech">
+              <span>Firebase Auth</span><span>Firestore</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #2e7d32, #388e3c);">
+            <i class="fas fa-chart-bar proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Dashboard de Precios</h3>
+            <p>Panel analítico con gráficas por categoría que muestra tendencias de precios. Los usuarios pueden visualizar comparativas y estadísticas del mercado colombiano en tiempo real.</p>
+            <div class="proyecto-tech">
+              <span>Chart.js</span><span>Firebase</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card">
+          <div class="proyecto-img" style="background: linear-gradient(135deg, #6a1b9a, #8e24aa);">
+            <i class="fas fa-star proyecto-icon"></i>
+          </div>
+          <div class="proyecto-info">
+            <h3>Reseñas y Recomendaciones</h3>
+            <p>Sistema de reseñas con calificación por estrellas integrado en el panel de usuario. Permite a los consumidores compartir experiencias sobre negocios y productos verificados.</p>
+            <div class="proyecto-tech">
+              <span>Firebase</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BENEFICIOS ========== -->
+  <section class="beneficios dark-section" id="beneficios">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-badge">Ventajas</span>
+        <h2>Beneficios de Price Nice</h2>
+        <p>Razones concretas para confiar en nuestra plataforma.</p>
+      </div>
+      <div class="beneficios-grid">
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h3>Innovación tecnológica</h3>
+            <p>Desarrollamos con Firebase, Bootstrap y Chart.js para ofrecerte una experiencia moderna, rápida y confiable en tiempo real.</p>
+          </div>
+        </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-camera"></i></div>
+          <div>
+            <h3>Evidencia fotográfica</h3>
+            <p>Cada precio actualizado requiere foto de evidencia obligatoria. Los datos son verificados por nuestra red de verificadores certificados.</p>
+          </div>
+        </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+          <div>
+            <h3>Escalabilidad</h3>
+            <p>Nuestra arquitectura en la nube crece contigo: de Bogotá a Colombia, de Colombia a Latinoamérica y al mundo.</p>
+          </div>
+        </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-headset"></i></div>
+          <div>
+            <h3>Soporte técnico</h3>
+            <p>Equipo de soporte disponible para resolver dudas y garantizar una experiencia sin interrupciones para todos los usuarios.</p>
+          </div>
+        </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-wifi"></i></div>
+          <div>
+            <h3>Acceso desde cualquier lugar</h3>
+            <p>Disponible en Android, iOS y web. Consulta precios donde estés y cuando los necesites, sin restricciones de dispositivo.</p>
+          </div>
+        </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div>
+            <h3>Decisiones más inteligentes</h3>
+            <p>Toma decisiones de compra más rápidas e informadas con precios reales, comparativas y reseñas de la comunidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="testimonios" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Testimonios</span>
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <p>Experiencias reales de personas que confían en Price Nice.</p>
+      </div>
+      <div class="testimonios-slider" id="testimoniosSlider">
+        <div class="testimonio-card active">
+          <div class="testimonio-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Fui a Cartagena y gracias a Price Nice pude verificar los precios de los restaurantes antes de entrar. Me ahorré más de $80.000 en una sola tarde."</p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar"><img src="priceniceimages/logo-dark.png" alt="Price Nice" /></div>
+            <div>
+              <strong>María González</strong>
+              <span>Viajera — Bogotá</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Como turista extranjero, siempre tenía miedo de que me cobraran de más. Price Nice me dio la tranquilidad que necesitaba para explorar Colombia sin preocupaciones."</p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar"><img src="priceniceimages/logo-dark.png" alt="Price Nice" /></div>
+            <div>
+              <strong>Carlos Rodríguez</strong>
+              <span>Turista — México</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>"La app es muy intuitiva y los precios están siempre actualizados con foto de evidencia. Me ayudó a comparar supermercados y encontrar el más económico cerca de mi casa."</p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar"><img src="priceniceimages/logo-dark.png" alt="Price Nice" /></div>
+            <div>
+              <strong>Laura Martínez</strong>
+              <span>Consumidora — Medellín</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio-card">
+          <div class="testimonio-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Recomendé Price Nice a todos mis clientes del hotel. Ahora los turistas llegan con información real y tienen mejores experiencias de compra en la ciudad."</p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar"><img src="priceniceimages/logo-dark.png" alt="Price Nice" /></div>
+            <div>
+              <strong>Andrés Ospina</strong>
+              <span>Gerente de hotel — Cali</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq dark-section" id="faq">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-badge">FAQ</span>
+        <h2>Preguntas Frecuentes</h2>
+        <p>Todo lo que necesitas saber sobre Price Nice.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo funciona Price Nice?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Price Nice recopila precios de negocios colombianos y los muestra en nuestra plataforma. Los verificadores certificados confirman los precios con foto de evidencia. Además, los usuarios pueden reportar nuevos precios, creando un sistema colaborativo que beneficia a toda la comunidad.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿La aplicación es gratuita?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Sí, Price Nice tiene una versión completamente gratuita con publicidad. También ofrecemos una versión Premium sin anuncios, con mayor velocidad y funciones adicionales para una mejor experiencia.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿En qué ciudades está disponible actualmente?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Actualmente estamos iniciando con Bogotá como ciudad piloto, con productos de tiendas como D1, Éxito, Jumbo, Carulla, Olímpica y más. Próximamente nos expandiremos a Medellín, Cali, Barranquilla y otros departamentos de Colombia.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo garantizan que los precios son confiables?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Cada actualización de precio requiere obligatoriamente una foto de evidencia (etiqueta, pantalla o volante), el lugar donde se obtuvo y el nombre de la tienda. Los verificadores certificados aprueban o rechazan productos con base en evidencia física real.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Qué roles existen en la plataforma?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Price Nice tiene 6 roles: <strong>Admin</strong> (control total), <strong>Dueño</strong> (gestión del negocio), <strong>Vendedor</strong> (carga de productos), <strong>Verificador</strong> (confirma precios con evidencia), <strong>Patrocinador</strong> (visibilidad publicitaria) y <strong>Usuario</strong> (consulta y reseñas).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cómo puede mi negocio aparecer en Price Nice?</span>
+            <i class="fas fa-plus faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Los negocios pueden registrarse en nuestra plataforma con un rol de Vendedor o Dueño para gestionar su información de precios y aprovechar la visibilidad que Price Nice ofrece a miles de consumidores y viajeros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contacto</span>
+        <h2>¿Listo para proteger tu bolsillo?</h2>
+        <p>Escríbenos y te contamos cómo Price Nice puede ayudarte a ti o a tu negocio.</p>
+      </div>
+      <div class="contacto-grid">
+        <div class="contacto-form-wrapper">
+          <form class="contacto-form" id="contactoForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <div class="input-wrapper">
+                <i class="fas fa-user"></i>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <span class="field-error" id="error-nombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">corro electronico</label>
+              <div class="input-wrapper">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+              </div>
+              <span class="field-error" id="error-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <div class="input-wrapper">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-comment"></i>
+                <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+              </div>
+              <span class="field-error" id="error-mensaje"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar mensaje
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none;">
+              <i class="fas fa-check-circle"></i> ¡Mensaje enviado! Nos pondremos en contacto pronto.
+            </div>
+          </form>
+        </div>
+        <div class="contacto-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Dirección</h4>
+              <p>Bogotá, Colombia</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Correo corporativo</h4>
+              <p>priceniceworld@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Teléfono</h4>
+              <p>+57 300 000 0000</p>
+            </div>
+          </div>
+          <div class="redes-sociales">
+            <h4>Síguenos</h4>
+            <div class="redes-grid">
+              <a href="#" class="red-social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="red-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="red-social" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="red-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="red-social" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOGOS – SECCIÓN COMPARATIVA ========== -->
+  <section class="logos-comparativa" id="logos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Identidad visual</span>
+        <h2>Nuestros dos logos</h2>
+        <p>Cada versión está diseñada para adaptarse al fondo donde se usa. Así luce Price Nice en distintos contextos.</p>
+      </div>
+      <div class="logos-grid">
+
+        <!-- Logo para fondo claro -->
+        <div class="logo-showcase light-bg">
+          <div class="logo-showcase-inner">
+            <img src="priceniceimages/logo-light.png" alt="Logo Price Nice – versión fondo claro" class="showcase-logo" />
+          </div>
+          <div class="logo-showcase-info">
+            <span class="logo-badge light-badge"><i class="fas fa-sun"></i> Para fondos claros</span>
+            <h3>Versión clara</h3>
+            <p>Pensada para usarse sobre fondos blancos o beige. El texto "price nice" aparece en tono crema/arena y los trazos del personaje en azul marino suave, dando una sensación cálida y amigable.</p>
+            <ul class="logo-uses">
+              <li><i class="fas fa-check"></i> Secciones blancas de la plataforma</li>
+              <li><i class="fas fa-check"></i> Documentos, presentaciones e impresiones</li>
+              <li><i class="fas fa-check"></i> Fondos de pantalla claros</li>
+              <li><i class="fas fa-check"></i> Correos y materiales corporativos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Separador VS -->
+        <div class="logos-vs">
+          <span>VS</span>
+        </div>
+
+        <!-- Logo para fondo oscuro -->
+        <div class="logo-showcase dark-bg">
+          <div class="logo-showcase-inner">
+            <img src="priceniceimages/logo-dark.png" alt="Logo Price Nice – versión fondo oscuro" class="showcase-logo" />
+          </div>
+          <div class="logo-showcase-info">
+            <span class="logo-badge dark-badge"><i class="fas fa-moon"></i> Para fondos oscuros</span>
+            <h3>Versión oscura</h3>
+            <p>Diseñada para destacar sobre fondos marrones, azul marino o negros. El texto "price nice" y el personaje ganan contraste y visibilidad, manteniendo la identidad visual de la marca.</p>
+            <ul class="logo-uses">
+              <li><i class="fas fa-check"></i> Navbar y hero de la aplicación</li>
+              <li><i class="fas fa-check"></i> Footer y secciones oscuras</li>
+              <li><i class="fas fa-check"></i> Pantallas de inicio (splash screen)</li>
+              <li><i class="fas fa-check"></i> Modo oscuro de la app móvil</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabla comparativa -->
+      <div class="logos-tabla">
+        <h3><i class="fas fa-table"></i> Comparativa rápida</h3>
+        <div class="tabla-grid">
+          <div class="tabla-header">Característica</div>
+          <div class="tabla-header light-col">Versión Clara</div>
+          <div class="tabla-header dark-col">Versión Oscura</div>
+
+          <div class="tabla-cell label">Fondo ideal</div>
+          <div class="tabla-cell light-col">Blanco / Crema / Beige</div>
+          <div class="tabla-cell dark-col">Marrón / Azul marino / Negro</div>
+
+          <div class="tabla-cell label">Color del texto</div>
+          <div class="tabla-cell light-col">Crema / Arena suave</div>
+          <div class="tabla-cell dark-col">Azul marino oscuro</div>
+
+          <div class="tabla-cell label">Contraste</div>
+          <div class="tabla-cell light-col">Alto sobre fondos claros</div>
+          <div class="tabla-cell dark-col">Alto sobre fondos oscuros</div>
+
+          <div class="tabla-cell label">Uso principal</div>
+          <div class="tabla-cell light-col">Documentos, catálogo, web</div>
+          <div class="tabla-cell dark-col">App móvil, navbar, footer</div>
+
+          <div class="tabla-cell label">Archivo</div>
+          <div class="tabla-cell light-col"><code>logo-light.png</code></div>
+          <div class="tabla-cell dark-col"><code>logo-dark.png</code></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <!-- logo-dark: footer tiene fondo oscuro -->
+          <img src="priceniceimages/logo-dark.png" alt="Price Nice" class="footer-logo" />
+          <p>Compara precios, viaja con confianza.<br />Desde Bogotá para Colombia y el mundo.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Producto</h4>
+          <ul>
+            <li><a href="#servicios">App Móvil</a></li>
+            <li><a href="#portafolio">Catálogo de Precios</a></li>
+            <li><a href="#portafolio">Verificación</a></li>
+            <li><a href="#portafolio">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Price Nice. Todos los derechos reservados.</p>
+        <p>Hecho con <i class="fas fa-heart" style="color:var(--orange);"></i> en Colombia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
